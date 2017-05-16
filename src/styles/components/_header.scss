@@ -1,0 +1,38 @@
+header{
+  background: $primaryColor;
+  height: 56px;
+
+  .container{
+    display: flex;
+    height:100%;
+    align-items: center;
+    #logo{
+      margin-right: auto;
+    }
+    #searchForm{
+      margin-left: 20px;
+    }
+  }
+}
+
+#logo{
+  a{
+    img{
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 420px){
+  header {
+    padding-top: 20px;
+    height: 120px;
+    .container{
+      position: relative;
+      align-items: flex-start;
+    }
+    #menu-area{
+      align-items: flex-start;
+    }
+  }
+}

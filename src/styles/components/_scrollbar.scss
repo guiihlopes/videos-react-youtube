@@ -1,0 +1,15 @@
+::-webkit-scrollbar{
+  width: 11px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(230, 230, 230);
+  border-right: 5px solid white;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

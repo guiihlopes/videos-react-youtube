@@ -1,0 +1,25 @@
+$maxColums: 12;
+//GRID SYSTEM
+@for $i from 1 through $maxColums{
+  $width: 1/$i;
+  .column-#{$i}{
+    flex-basis: percentage($width);
+  }
+}
+
+@media (max-width: 768px) {
+  @for $i from 1 through $maxColums{
+    $width: 0.5;
+    .column-#{$i}{
+      flex-basis: percentage($width);
+    }
+  }
+}
+@media (max-width: 680px) {
+  @for $i from 1 through $maxColums{
+    $width: 1;
+    .column-#{$i}{
+      flex-basis: percentage($width);
+    }
+  }
+}

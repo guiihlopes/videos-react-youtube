@@ -1,0 +1,80 @@
+.load-more{
+  margin: 18px auto;
+  border: 1px solid $secundaryColor;
+  padding: 8px 0;
+  width: 50%;
+  color: $menuItemColor;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-weight: bold;
+  transition: 1s all cubic-bezier(.19,1,.22,1);
+  background: white;
+  position: relative;
+  z-index:10;
+  &:focus{
+    outline:none;
+  }
+  &:hover{
+    background: $menuItemColor;
+    color: #ffffff;
+  }
+  &:active{
+    background: #797979;
+    position: relative;
+    color: #ffffff;
+    &:after{
+      content: '';
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: #000;
+      opacity:.05;
+    }
+  }
+  &.hide{
+    opacity:0;
+    border: none;
+    background: transparent;
+  }
+}
+.spinner{
+  background: url("../images/loader.png") no-repeat;
+  width: 22px!important;
+  height: 24px!important;
+  margin: 0 auto!important;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border:none;
+  animation: animateSpinner 1.2s linear infinite;
+}
+.button-load-more{
+  position: relative;
+  &.hide{
+    opacity:0;
+    pointer-events: none;
+  }
+}
+
+
+@keyframes animateSpinner{
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .load-more{
+    width:100%;
+  }
+}
