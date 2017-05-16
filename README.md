@@ -1,6 +1,6 @@
-# Fictícia vídeos
+# Videos youtube react
 
-> Repositório para disponibilizar desafio para vaga de desenvolvedor front-end.
+> Repositório para disponibilizar teste de seleção para vaga de desenvolvedor front-end.
 
 ## Build Setup
 
